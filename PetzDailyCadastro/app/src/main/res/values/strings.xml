@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cadastro</string>
+    <string name="txtView">LOGO</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtEmail">E-mail</string>
+    <string name="txtLogin">Nome de Usuário</string>
+    <string name="txtPassword">Senha</string>
+    <string name="btnCadastrar">Cadastrar-se</string>
+</resources>
