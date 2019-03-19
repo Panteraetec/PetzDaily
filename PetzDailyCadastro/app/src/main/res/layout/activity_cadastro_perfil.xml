@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastro_perfil">
+
+    <TextView
+        android:id="@+id/edt_CpSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="332dp"
+        android:layout_marginRight="332dp"
+        android:text="Sexo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CpIdade"
+        tools:text="@string/edt_CpSexo" />
+
+    <TextView
+        android:id="@+id/edt_CpRaca"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="332dp"
+        android:layout_marginRight="332dp"
+        android:text="Raça"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CpNome"
+        tools:text="@string/edt_CpRaca" />
+
+    <EditText
+        android:id="@+id/txt_CpRaca"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:ems="10"
+        android:hint="São Bernado"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpRaca"
+        tools:text="@string/txt_CpRaca" />
+
+    <TextView
+        android:id="@+id/edt_CpEspecie"
+        android:layout_width="96dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginRight="272dp"
+        android:text="Especie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CpRaca"
+        tools:text="@string/edt_CpEspecie" />
+
+    <EditText
+        android:id="@+id/txt_CpEspecie"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpEspecie"
+        tools:text="@string/txt_CpEspecie" />
+
+    <TextView
+        android:id="@+id/edt_CpIdade"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginRight="268dp"
+        android:text="Idade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_CpEspecie"
+        tools:text="@string/edt_CpIdade" />
+
+    <EditText
+        android:id="@+id/txt_CpIdade"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:ems="10"
+        android:hint="11 Anos"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpIdade"
+        tools:text="@string/txt_CpIdade" />
+
+    <TextView
+        android:id="@+id/edt_CpNome"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginRight="328dp"
+        android:text="Nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:text="@string/edt_CpNome" />
+
+    <EditText
+        android:id="@+id/txt_CpNome"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:ems="10"
+        android:hint="Bolota"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpNome"
+        tools:text="@string/txt_CpNome" />
+
+    <TextView
+        android:id="@+id/app_cp"
+        android:layout_width="169dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:text="Cadastro de Perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/app_cp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="73dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        app:layout_constraintEnd_toStartOf="@+id/app_cp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <Spinner
+        android:id="@+id/spnSexo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpSexo" />
+
+
+</android.support.constraint.ConstraintLayout>
