@@ -1,12 +1,20 @@
-<resources>
+﻿<resources>
     <string name="app_name">PetzDaily</string>
     <string name="txtView">LOGIN</string>
     <string name="txtNome">Nome</string>
     <string name="txtEmail">E-mail</string>
     <string name="txtLogin">Login</string>
     <string name="txtPassword">Senha</string>
-    <string name="btnCadastrar">Cadastrar-se</string>
+
     <string name="btnLogar">Acessar</string>
     <string name="txtQuest">Ainda não possui um login? Registrar-se</string>
 
+    <!-- string cadastro -->
+
+    <string name="txtView1">LOGO</string>
+    <string name="edtNome"></string>
+    <string name="edtEmail"></string>
+    <string name="edtLogin"></string>
+    <string name="edtPassword"></string>
+    <string name="btnCadastrar">Cadastrar</string>
 </resources>

@@ -27,16 +27,18 @@
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
+        android:hint="Nome"
         android:inputType="textPersonName"
+        android:textColorHint="#bbb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/txtNome" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:text="@string/edtNome" />
 
     <EditText
         android:id="@+id/editText2"
@@ -44,16 +46,18 @@
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="37dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
+        android:hint="Nome de Usuário"
         android:inputType="textPersonName"
+        android:textColorHint="#bbb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/txtLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        tools:text="@string/edtLogin" />
 
     <EditText
         android:id="@+id/editText3"
@@ -61,46 +65,51 @@
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="37dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
+        android:hint="E-mail"
         android:inputType="textEmailAddress"
+        android:textColorHint="#bbb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/txtEmail" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="243dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/txtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:text="@string/edtEmail" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/btnCadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="*****"
+        android:textColorHint="#bbb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 </android.support.constraint.ConstraintLayout>
