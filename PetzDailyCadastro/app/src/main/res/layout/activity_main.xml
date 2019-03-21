@@ -6,28 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="102dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:text="@string/txtView"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="243dp"
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="7dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
@@ -35,9 +20,9 @@
         android:inputType="textPersonName"
         android:textColorHint="#bbb"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:text="@string/edtNome" />
 
     <EditText
@@ -46,7 +31,7 @@
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
@@ -65,7 +50,7 @@
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
@@ -93,7 +78,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        app:layout_constraintVertical_bias="0.666" />
 
     <EditText
         android:id="@+id/edtPassword"
@@ -101,15 +87,30 @@
         android:layout_height="43dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="*****"
+        android:inputType="textPassword"
         android:textColorHint="#bbb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
 </android.support.constraint.ConstraintLayout>
