@@ -28,6 +28,7 @@
     <string name="txt_CpRaca"></string>
     <string name="txt_CpEspecie"></string>
     <string name="txt_CpIdade"></string>
+    <string name="txt_cadastre">CADASTRE O PERFIL!</string>
 </resources>
 	
 
