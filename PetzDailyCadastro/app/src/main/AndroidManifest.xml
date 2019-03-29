@@ -26,6 +26,7 @@
             android:name=".ActivityPetzDailyNavigation"
             android:label="@string/title_activity_petz_daily_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".petz_eventos"></activity>
     </application>
 
 </manifest>

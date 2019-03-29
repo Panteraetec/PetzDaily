@@ -49,6 +49,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!--Eventos-->
+    <string name="txtIE">CRIAR EVENTO</string>
 </resources>
 	
 
