@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/edt_CpSexo"
@@ -56,8 +55,8 @@
 
     <TextView
         android:id="@+id/edt_CpEspecie"
-        android:layout_width="96dp"
-        android:layout_height="23dp"
+        android:layout_width="97dp"
+        android:layout_height="22dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="13dp"
@@ -107,7 +106,6 @@
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="7dp"
         android:layout_marginEnd="53dp"
         android:layout_marginRight="53dp"
         android:ems="10"
@@ -115,6 +113,7 @@
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_CpIdade"
         tools:text="@string/txt_CpIdade" />
@@ -140,7 +139,6 @@
         android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="53dp"
         android:layout_marginRight="53dp"
         android:ems="10"
@@ -148,14 +146,15 @@
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_CpNome"
         tools:text="@string/txt_CpNome" />
 
     <TextView
         android:id="@+id/app_cp"
-        android:layout_width="233dp"
-        android:layout_height="44dp"
+        android:layout_width="196dp"
+        android:layout_height="32dp"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="33dp"
@@ -170,8 +169,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="73dp"
-        android:layout_height="61dp"
+        android:layout_width="99dp"
+        android:layout_height="78dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="16dp"
@@ -184,18 +183,20 @@
 
     <Spinner
         android:id="@+id/spnSexo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="249dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_CpSexo" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpSexo"
+        app:layout_constraintVertical_bias="0.461" />
 
 
 </android.support.constraint.ConstraintLayout>

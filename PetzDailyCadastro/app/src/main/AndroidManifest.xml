@@ -14,19 +14,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ActivityPetzDailyNavigation"
+            android:label="@string/title_activity_petz_daily_navigation"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".PetzDailyLogin">
+
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".PetzDailyEventoNav"
+            android:label="@string/title_activity_petz_daily_evento_nav"
+            android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".ActivityPetzDailyNavigation"
-            android:label="@string/title_activity_petz_daily_navigation"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".petz_eventos"></activity>
     </application>
 
 </manifest>

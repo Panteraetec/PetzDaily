@@ -21,7 +21,7 @@
     <!--String Cadastro Perfil -->
     <string name="edt_CpNome">NOME</string>
     <string name="edt_CpRaca">RAÇA</string>
-    <string name="edt_CpEspecie">ESPPÉCIE</string>
+    <string name="edt_CpEspecie">ESPÉCIE</string>
     <string name="edt_CpIdade">IDADE</string>
     <string name="edt_CpSexo">SEXO</string>
     <string name="txt_CpNome"></string>
@@ -52,6 +52,8 @@
 
     <!--Eventos-->
     <string name="txtIE">CRIAR EVENTO</string>
+    <string name="btnPesquisar">Pesquisar</string>
+    <string name="title_activity_petz_daily_evento_nav">PetzDailyEventoNav</string>
 </resources>
 	
 
