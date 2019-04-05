@@ -54,6 +54,7 @@
     <string name="txtIE">CRIAR EVENTO</string>
     <string name="btnPesquisar">Pesquisar</string>
     <string name="title_activity_petz_daily_evento_nav">PetzDailyEventoNav</string>
+    <string name="title_activity_cadastro_petz_daily_nav">CadastroPetzDailyNav</string>
 </resources>
 	
 

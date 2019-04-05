@@ -8,6 +8,6 @@ public class petz_eventos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_petz_eventos);
+        setContentView(R.layout.activity_cadastro_petz_daily_nav );
     }
 }

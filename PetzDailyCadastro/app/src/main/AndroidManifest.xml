@@ -17,18 +17,18 @@
         <activity
             android:name=".ActivityPetzDailyNavigation"
             android:label="@string/title_activity_petz_daily_navigation"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".PetzDailyLogin">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PetzDailyLogin"></activity>
         <activity android:name=".MainActivity" />
         <activity
             android:name=".PetzDailyEventoNav"
             android:label="@string/title_activity_petz_daily_evento_nav"
             android:theme="@style/AppTheme.NoActionBar">
-
+        </activity>
+        <activity
+            android:name=".CadastroPetzDailyNav"
+            android:label="@string/title_activity_cadastro_petz_daily_nav"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
