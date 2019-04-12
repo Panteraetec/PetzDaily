@@ -55,6 +55,8 @@
     <string name="btnPesquisar">Pesquisar</string>
     <string name="title_activity_petz_daily_evento_nav">PetzDailyEventoNav</string>
     <string name="title_activity_cadastro_petz_daily_nav">CadastroPetzDailyNav</string>
+    <string name="title_activity_petz_daily_criacao_evento_nav">PetzDailyCriacaoEventoNav</string>
+    <string name="btnCriar">Criar</string>
 </resources>
 	
 
