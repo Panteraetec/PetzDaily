@@ -102,6 +102,7 @@
         android:layout_marginTop="37dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
         android:text="@string/btnPesquisar"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

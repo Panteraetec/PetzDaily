@@ -57,6 +57,16 @@
     <string name="title_activity_cadastro_petz_daily_nav">CadastroPetzDailyNav</string>
     <string name="title_activity_petz_daily_criacao_evento_nav">PetzDailyCriacaoEventoNav</string>
     <string name="btnCriar">Criar</string>
+    <string name="title_activity_carteira_vacina">carteira_vacina</string>
+
+    <!--Vacina-->
+    <string name="txtNVacina">Nome da vacina</string>
+    <string name="txtDVacina">Data</string>
+    <string name="txtOVacina">Observações</string>
+    <string name="edtNvacina"></string>
+    <string name="edtDVacina"></string>
+    <string name="edtOVacina"></string>
+    <string name="btnConcluir">Concluir</string>
 </resources>
 	
 
