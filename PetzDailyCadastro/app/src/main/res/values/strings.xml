@@ -62,11 +62,11 @@
     <!--Vacina-->
     <string name="txtNVacina">Nome da vacina</string>
     <string name="txtDVacina">Data</string>
-    <string name="txtOVacina">Observações</string>
+    <string name="txtRVacina">Reações</string>
     <string name="edtNvacina"></string>
     <string name="edtDVacina"></string>
     <string name="edtOVacina"></string>
-    <string name="btnConcluir">Concluir</string>
+    <string name="btnSalvarV">Salvar</string>
 </resources>
 	
 
