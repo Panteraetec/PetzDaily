@@ -67,6 +67,7 @@
     <string name="edtDVacina"></string>
     <string name="edtOVacina"></string>
     <string name="btnSalvarV">Salvar</string>
+    <string name="title_activity_petz_daily_tela_usuario_nav">petzDailyTelaUsuarioNav</string>
 </resources>
 	
 

@@ -31,7 +31,7 @@ public class PetzDailyLogin extends AppCompatActivity {
     }
 
     public void onClickAcessar(View v){
-        Intent it = new Intent(PetzDailyLogin.this , ActivityPetzDailyNavigation.class);
+        Intent it = new Intent(PetzDailyLogin.this , PetzDailyTelaUsuarioNav.class);
 
         startActivity(it);
     }
