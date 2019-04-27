@@ -66,6 +66,17 @@ public class PetzDailyEventoNav extends AppCompatActivity
             startActivity(it);
         }
 
+        if (id == R.id.nav_perfil){
+            Intent it = new Intent(this,PetzDailyPerfilPetNav.class);
+            startActivity(it);
+        }
+
+        if (id == R.id.nav_sair){
+            Intent it = new Intent(this, PetzDailyLogin.class);
+            startActivity(it);
+        }
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".petz_eventos"
-    tools:showIn="@layout/app_bar_petz_daily_criacao_evento_nav">
+    tools:showIn="@layout/app_bar_petz_daily_criacao_evento_nav"
+    android:background="@drawable/fundo_pet">
 
     <TextView
         android:id="@+id/txtLocal"

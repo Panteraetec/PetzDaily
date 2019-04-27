@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CadastroPetzDailyNav"
-    tools:showIn="@layout/app_bar_cadastro_petz_daily_nav">
+    tools:showIn="@layout/app_bar_cadastro_petz_daily_nav"
+    android:background="@drawable/fundo_pet">
 
     <TextView
         android:id="@+id/edt_CpSexo"
@@ -18,6 +19,7 @@
         android:layout_marginEnd="316dp"
         android:layout_marginRight="316dp"
         android:text="Sexo"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_CpIdade"
@@ -33,6 +35,7 @@
         android:layout_marginEnd="312dp"
         android:layout_marginRight="312dp"
         android:text="Raça"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_CpNome"
@@ -64,6 +67,7 @@
         android:layout_marginEnd="251dp"
         android:layout_marginRight="251dp"
         android:text="Especie"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_CpRaca"
@@ -95,6 +99,7 @@
         android:layout_marginEnd="248dp"
         android:layout_marginRight="248dp"
         android:text="Idade"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_CpEspecie"
@@ -123,14 +128,15 @@
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="79dp"
         android:layout_marginEnd="312dp"
         android:layout_marginRight="312dp"
         android:text="Nome"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/edt_CpNome" />
 
     <EditText
@@ -151,19 +157,6 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_CpNome"
         tools:text="@string/txt_CpNome" />
 
-    <TextView
-        android:id="@+id/app_cp"
-        android:layout_width="203dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="Cadastro de Perfil"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/txt_cadastre" />
-
     <Spinner
         android:id="@+id/spnSexo"
         android:layout_width="249dp"
@@ -173,25 +166,25 @@
         android:layout_marginTop="6dp"
         android:layout_marginEnd="99dp"
         android:layout_marginRight="99dp"
-        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_CpSexo" />
+
+    <Button
+        android:id="@+id/btnCadastrarPet"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/input_design"
+        android:text="@string/btnCadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_CpSexo"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="115dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        app:layout_constraintEnd_toStartOf="@+id/app_cp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_gatinho" />
+        app:layout_constraintTop_toBottomOf="@+id/spnSexo" />
 
 </android.support.constraint.ConstraintLayout>

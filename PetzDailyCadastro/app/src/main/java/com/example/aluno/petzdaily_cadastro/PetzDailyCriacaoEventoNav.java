@@ -57,28 +57,6 @@ public class PetzDailyCriacaoEventoNav extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.petz_daily_criacao_evento_nav, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -89,6 +67,17 @@ public class PetzDailyCriacaoEventoNav extends AppCompatActivity
             Intent it = new Intent(this,PetzDailyEventoNav.class);
             startActivity(it);
         }
+
+        if (id == R.id.nav_perfil){
+            Intent it = new Intent(this,PetzDailyPerfilPetNav.class);
+            startActivity(it);
+        }
+
+        if (id == R.id.nav_sair){
+            Intent it = new Intent(this, PetzDailyLogin.class);
+            startActivity(it);
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

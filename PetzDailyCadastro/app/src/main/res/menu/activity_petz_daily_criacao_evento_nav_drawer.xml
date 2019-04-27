@@ -8,7 +8,7 @@
         android:id="@+id/navDrawer"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_perfil"
             android:icon="@drawable/ic_menu_pata"
             android:title="Perfis" />
         <item

@@ -15,7 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".PetzDailyLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
         <activity
@@ -34,6 +38,10 @@
             android:name=".carteira_vacina"
             android:label="@string/title_activity_carteira_vacina"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PetzDailyPerfilPetNav"
+            android:label="@string/title_activity_petz_daily_perfil_pet_nav"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -14,16 +14,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class CadastroPetzDailyNav extends AppCompatActivity
+public class PetzDailyPerfilPetNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_petz_daily_nav);
+        setContentView(R.layout.activity_petz_daily_perfil_pet_nav);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -47,11 +46,17 @@ public class CadastroPetzDailyNav extends AppCompatActivity
 
 
 
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+
+        if (id == R.id.nav_evento) {
+            Intent it = new Intent(this,PetzDailyEventoNav.class);
+            startActivity(it);
+        }
 
         if (id == R.id.nav_perfil){
             Intent it = new Intent(this,PetzDailyPerfilPetNav.class);
@@ -63,10 +68,6 @@ public class CadastroPetzDailyNav extends AppCompatActivity
             startActivity(it);
         }
 
-        if (id == R.id.nav_evento) {
-            Intent it = new Intent(this,PetzDailyEventoNav.class);
-            startActivity(it);
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

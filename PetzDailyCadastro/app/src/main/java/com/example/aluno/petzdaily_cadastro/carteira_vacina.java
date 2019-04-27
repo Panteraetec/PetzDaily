@@ -1,5 +1,6 @@
 package com.example.aluno.petzdaily_cadastro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -44,27 +45,6 @@ public class carteira_vacina extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.carteira_vacina, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -72,9 +52,21 @@ public class carteira_vacina extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.nav_evento) {
+            Intent it = new Intent(this,PetzDailyEventoNav.class);
+            startActivity(it);
         }
+
+        if (id == R.id.nav_perfil){
+            Intent it = new Intent(this,PetzDailyPerfilPetNav.class);
+            startActivity(it);
+        }
+
+        if (id == R.id.nav_sair){
+            Intent it = new Intent(this, PetzDailyLogin.class);
+            startActivity(it);
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
