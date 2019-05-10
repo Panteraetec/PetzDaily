@@ -9,60 +9,6 @@
     tools:showIn="@layout/app_bar_petz_daily_perfil_pet_nav"
     android:background="@drawable/fundo_pet">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginRight="78dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:srcCompat="@tools:sample/avatars[2]" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:srcCompat="@tools:sample/avatars[3]" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginRight="78dp"
-        android:layout_marginBottom="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:srcCompat="@tools:sample/avatars[2]" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -99,12 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="25dp"
         android:text="Luke"
         android:textColor="@color/colorAccent"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        tools:layout_editor_absoluteY="296dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -112,7 +57,6 @@
         android:layout_height="21dp"
         android:layout_marginStart="171dp"
         android:layout_marginLeft="171dp"
-        android:layout_marginTop="26dp"
         android:layout_marginEnd="98dp"
         android:layout_marginRight="98dp"
         android:text="Michelle"
@@ -120,5 +64,6 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        tools:layout_editor_absoluteY="293dp" />
+
 </android.support.constraint.ConstraintLayout>

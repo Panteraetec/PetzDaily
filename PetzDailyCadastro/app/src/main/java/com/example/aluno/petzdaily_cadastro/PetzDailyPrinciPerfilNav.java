@@ -13,21 +13,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
-public class PetzDailyPerfilPetNav extends AppCompatActivity
+public class PetzDailyPrinciPerfilNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    ImageView imgPet1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_petz_daily_perfil_pet_nav);
+        setContentView(R.layout.activity_petz_daily_princi_perfil_nav);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        imgPet1 = (ImageView) findViewById(R.id.imgPet1);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -37,15 +32,6 @@ public class PetzDailyPerfilPetNav extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        imgPet1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(PetzDailyPerfilPetNav.this , PetzDailyPrinciPerfilNav.class);
-
-                startActivity(it);
-            }
-        });
     }
 
     @Override

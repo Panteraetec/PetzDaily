@@ -69,6 +69,13 @@
     <string name="btnSalvarV">Salvar</string>
     <string name="title_activity_petz_daily_tela_usuario_nav">petzDailyTelaUsuarioNav</string>
     <string name="title_activity_petz_daily_perfil_pet_nav">PetzDailyPerfilPetNav</string>
+    <string name="title_activity_petz_daily_pet_perfil">PetzDailyPetPerfil</string>
+
+    <!--Perfil Pet-->
+    <string name="btnEditar">Editar</string>
+    <string name="txtDescricao">Descrição do Pet</string>
+    <string name="title_activity_petz_daily_princi_perfil_nav">PetzDailyPrinciPerfilNav</string>
+
 </resources>
 	
 

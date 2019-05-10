@@ -42,6 +42,11 @@
             android:name=".PetzDailyPerfilPetNav"
             android:label="@string/title_activity_petz_daily_perfil_pet_nav"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".PetzDailyPrinciPerfilNav"
+            android:label="@string/title_activity_petz_daily_princi_perfil_nav"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
