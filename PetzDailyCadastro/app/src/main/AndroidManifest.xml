@@ -31,22 +31,21 @@
             android:label="@string/title_activity_cadastro_petz_daily_nav"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".PetzDailyCriacaoEventoNav"
-            android:label="@string/title_activity_petz_daily_criacao_evento_nav"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".carteira_vacina"
             android:label="@string/title_activity_carteira_vacina"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PetzDailyPerfilPetNav"
             android:label="@string/title_activity_petz_daily_perfil_pet_nav"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PetzDailyPrinciPerfilNav"
             android:label="@string/title_activity_petz_daily_princi_perfil_nav"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PetzDailyCriacaoEventoNav"
+            android:label="@string/title_activity_petz_daily_criacao_evento_nav"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

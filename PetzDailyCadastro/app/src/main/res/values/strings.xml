@@ -55,7 +55,6 @@
     <string name="btnPesquisar">Pesquisar</string>
     <string name="title_activity_petz_daily_evento_nav">PetzDailyEventoNav</string>
     <string name="title_activity_cadastro_petz_daily_nav">CadastroPetzDailyNav</string>
-    <string name="title_activity_petz_daily_criacao_evento_nav">PetzDailyCriacaoEventoNav</string>
     <string name="btnCriar">Criar</string>
     <string name="title_activity_carteira_vacina">carteira_vacina</string>
 
@@ -75,6 +74,12 @@
     <string name="btnEditar">Editar</string>
     <string name="txtDescricao">Descrição do Pet</string>
     <string name="title_activity_petz_daily_princi_perfil_nav">PetzDailyPrinciPerfilNav</string>
+    <string name="title_activity_petz_daily_criacao_evento_nav">PetzDailyCriacaoEventoNav</string>
+
+    <string name="txtNomeEvento">Nome</string>
+    <string name="txtLocalEvento">Local</string>
+    <string name="txtTipoEvento">Tipo</string>
+    <string name="txtDescricaoEvento">Descrição</string>
 
 </resources>
 	
