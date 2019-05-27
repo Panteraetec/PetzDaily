@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "379946334683",
+    "firebase_url": "https://petz-daily.firebaseio.com",
+    "project_id": "petz-daily",
+    "storage_bucket": "petz-daily.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379946334683:android:cd79e1eac2370fb7",
+        "android_client_info": {
+          "package_name": "com.example.aluno.petzdaily_cadastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379946334683-46dmkoge7lbvb97tbase4gfi3hvf103f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aluno.petzdaily_cadastro",
+            "certificate_hash": "f35a064b9d9188878aaf6a34d64f0b3e77bc6394"
+          }
+        },
+        {
+          "client_id": "379946334683-q2l1pv93v10nc2qn62ufhs8nn6lk4qas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdtlw2GW91jlrX9EMVyBJnM0K3xXoRIEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379946334683-q2l1pv93v10nc2qn62ufhs8nn6lk4qas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
