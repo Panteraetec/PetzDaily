@@ -1,4 +1,4 @@
-package com.example.aluno.petzdaily_cadastro;
+﻿package com.example.aluno.petzdaily_cadastro;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -60,16 +60,16 @@ public class MainActivity extends AppCompatActivity {
         String pass = edtPassword.getText().toString();
 
 
-        if(TextUtils.isEmpty(nome)){
+        if(TextUtils.isEmpty(login)){
             Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
         }
-        if(TextUtils.isEmpty(nome)){
+        else if(TextUtils.isEmpty(nome)){
             Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
         }
-        if(TextUtils.isEmpty(nome)){
+        else if(TextUtils.isEmpty(email)){
             Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
         }
-        if(TextUtils.isEmpty(nome)){
+        else if(TextUtils.isEmpty(pass)){
             Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
         }
         else{
