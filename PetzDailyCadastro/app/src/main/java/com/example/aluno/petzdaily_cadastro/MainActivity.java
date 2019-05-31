@@ -1,4 +1,4 @@
-﻿package com.example.aluno.petzdaily_cadastro;
+package com.example.aluno.petzdaily_cadastro;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                             });
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Esse" + login + "já existe.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Esse" + login + "j� existe.", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                     Toast.makeText(MainActivity.this, "Tente outro login.", Toast.LENGTH_SHORT).show();
 
