@@ -10,17 +10,18 @@
     android:background="@drawable/fundo_pet">
 
     <EditText
-        android:id="@+id/edtNome"
+        android:id="@+id/edtNomeEvento"
         android:layout_width="219dp"
         android:layout_height="38dp"
         android:layout_marginStart="62dp"
         android:layout_marginLeft="62dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="19dp"
         android:layout_marginRight="19dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/txtNomeEvento"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -28,9 +29,9 @@
         android:id="@+id/txtNomeEvento"
         android:layout_width="55dp"
         android:layout_height="28dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="121dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="136dp"
         android:text="@string/txtNomeEvento"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -38,94 +39,70 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtLocalEvento"
+        android:id="@+id/txtDataEvento"
         android:layout_width="50dp"
         android:layout_height="28dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="42dp"
-        android:text="@string/txtLocalEvento"
+        android:layout_marginTop="63dp"
+        android:text="Data"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNomeEvento" />
 
-    <TextView
-        android:id="@+id/txtTipoEvento"
-        android:layout_width="44dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/txtTipoEvento"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLocalEvento" />
-
-    <Spinner
-        android:id="@+id/spTipo"
-        android:layout_width="222dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginLeft="74dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtTipoEvento"
-        app:layout_constraintTop_toBottomOf="@+id/edtLocal" />
-
     <EditText
-        android:id="@+id/edtLocal"
+        android:id="@+id/edtDataEvento"
         android:layout_width="220dp"
         android:layout_height="38dp"
         android:layout_marginStart="65dp"
         android:layout_marginLeft="65dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="46dp"
         android:layout_marginEnd="17dp"
         android:layout_marginRight="17dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtLocalEvento"
-        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtDataEvento"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeEvento" />
 
     <TextView
-        android:id="@+id/txtDescricaoEvento"
+        android:id="@+id/txtHorarioEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginTop="41dp"
-        android:text="@string/txtDescricaoEvento"
+        android:layout_marginTop="49dp"
+        android:text="Horario"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTipoEvento" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDataEvento" />
 
     <EditText
-        android:id="@+id/edtDescricao"
+        android:id="@+id/edtHorarioEvento"
         android:layout_width="220dp"
         android:layout_height="37dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="49dp"
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
         android:ems="10"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtDescricaoEvento"
-        app:layout_constraintTop_toBottomOf="@+id/spTipo" />
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toEndOf="@+id/txtHorarioEvento"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataEvento" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSalvar"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="82dp"
         android:layout_marginLeft="82dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="106dp"
         android:layout_marginEnd="92dp"
         android:layout_marginRight="92dp"
         android:layout_marginBottom="16dp"
@@ -134,7 +111,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoEvento" />
+        app:layout_constraintTop_toBottomOf="@+id/edtHorarioEvento" />
 
     <TextView
         android:id="@+id/textView20"

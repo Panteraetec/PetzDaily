@@ -18,7 +18,7 @@ import android.widget.ImageView;
 public class PetzDailyPerfilPetNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ImageView imgPet1;
+    private FloatingActionButton adcPet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +38,19 @@ public class PetzDailyPerfilPetNav extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        imgPet1.setOnClickListener(new View.OnClickListener() {
+        adcPet = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+
+        adcPet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(PetzDailyPerfilPetNav.this , PetzDailyPrinciPerfilNav.class);
-
-                startActivity(it);
+                Irpara();
             }
         });
+    }
+
+    private void Irpara() {
+        Intent i = new Intent (PetzDailyPerfilPetNav.this, PetzDailyPrinciPerfilNav.class);
+        startActivity(i);
     }
 
     @Override

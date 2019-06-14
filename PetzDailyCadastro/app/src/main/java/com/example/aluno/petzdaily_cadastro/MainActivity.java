@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                             });
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Esse" + login + "já existe.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Esse" + login + "ja existe.", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                     Toast.makeText(MainActivity.this, "Tente outro login.", Toast.LENGTH_SHORT).show();
 
