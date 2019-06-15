@@ -18,8 +18,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.aluno.petzdaily_cadastro.Prevalent.Prevalent;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -29,6 +31,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class carteira_vacina extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -67,6 +71,12 @@ public class carteira_vacina extends AppCompatActivity
 
             }
         });
+
+        View headerview = navigationView.getHeaderView(0);
+        TextView nomeUsuario = headerview.findViewById(R.id.nomeUsuario);
+        CircleImageView fotoUsuario = headerview.findViewById(R.id.fotoUsuario);
+
+        nomeUsuario.setText(Prevalent.currentOnlineUser.getNome());
     }
 
 
@@ -140,7 +150,10 @@ public class carteira_vacina extends AppCompatActivity
 
             }
         });
+
+
     }
+
 
 
 

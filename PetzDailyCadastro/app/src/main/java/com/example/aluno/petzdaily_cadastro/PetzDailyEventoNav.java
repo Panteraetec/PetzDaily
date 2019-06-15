@@ -14,6 +14,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.aluno.petzdaily_cadastro.Prevalent.Prevalent;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PetzDailyEventoNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,6 +42,12 @@ public class PetzDailyEventoNav extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         this.btnCriarEvento = (Button) findViewById(R.id.btnCriarEvento);
+
+        View headerview = navigationView.getHeaderView(0);
+        TextView nomeUsuario = headerview.findViewById(R.id.nomeUsuario);
+        CircleImageView fotoUsuario = headerview.findViewById(R.id.fotoUsuario);
+
+        nomeUsuario.setText(Prevalent.currentOnlineUser.getNome());
     }
 
     public void CriarEvento(View v){

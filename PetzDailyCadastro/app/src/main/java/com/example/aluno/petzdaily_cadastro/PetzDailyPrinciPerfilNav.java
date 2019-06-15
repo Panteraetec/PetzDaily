@@ -13,6 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.example.aluno.petzdaily_cadastro.Prevalent.Prevalent;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PetzDailyPrinciPerfilNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -32,6 +37,12 @@ public class PetzDailyPrinciPerfilNav extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View headerview = navigationView.getHeaderView(0);
+        TextView nomeUsuario = headerview.findViewById(R.id.nomeUsuario);
+        CircleImageView fotoUsuario = headerview.findViewById(R.id.fotoUsuario);
+
+        nomeUsuario.setText(Prevalent.currentOnlineUser.getNome());
     }
 
     @Override
