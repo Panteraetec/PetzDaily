@@ -14,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class CadastroPetzDailyNav extends AppCompatActivity
+public class PetzDailyVacinaNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_petz_daily_nav);
+        setContentView(R.layout.activity_petz_daily_vacina_nav);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -46,7 +46,11 @@ public class CadastroPetzDailyNav extends AppCompatActivity
     }
 
 
+    public void onClickVacina(View v){
+        Intent it = new Intent(PetzDailyVacinaNav.this, carteira_vacina.class);
 
+        startActivity(it);
+    }
 
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -55,6 +59,13 @@ public class CadastroPetzDailyNav extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        if (id == R.id.nav_evento) {
+            Intent it = new Intent(this,PetzDailyEventoNav.class);
+            startActivity(it);
+        }
+
+
+
         if (id == R.id.nav_perfil){
             Intent it = new Intent(this,PetzDailyPerfilPetNav.class);
             startActivity(it);
@@ -62,11 +73,6 @@ public class CadastroPetzDailyNav extends AppCompatActivity
 
         if (id == R.id.nav_sair){
             Intent it = new Intent(this, PetzDailyLogin.class);
-            startActivity(it);
-        }
-
-        if (id == R.id.nav_evento) {
-            Intent it = new Intent(this,PetzDailyEventoNav.class);
             startActivity(it);
         }
 

@@ -21,7 +21,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/txtNomeEvento"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -57,7 +57,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="65dp"
         android:layout_marginLeft="65dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="17dp"
         android:layout_marginRight="17dp"
         android:ems="10"
@@ -84,15 +84,14 @@
         android:id="@+id/edtHorarioEvento"
         android:layout_width="220dp"
         android:layout_height="37dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toEndOf="@+id/txtHorarioEvento"
         app:layout_constraintTop_toBottomOf="@+id/edtDataEvento" />
 

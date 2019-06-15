@@ -79,16 +79,16 @@ public class PetzDailyCriacaoEventoNav extends AppCompatActivity
 
 
         if(TextUtils.isEmpty(nome)){
-            Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Digite o nome", Toast.LENGTH_SHORT).show();
         }
         else if(TextUtils.isEmpty(data)){
-            Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Digite a data", Toast.LENGTH_SHORT).show();
         }
         else if(TextUtils.isEmpty(horario)){
-            Toast.makeText(this, "escreve ae", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Digite o horário", Toast.LENGTH_SHORT).show();
         }
         else{
-            loadingBar.setTitle("Criando a conta");
+            loadingBar.setTitle("Criando evento");
             loadingBar.setMessage("Aguarde");
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
@@ -116,7 +116,7 @@ public class PetzDailyCriacaoEventoNav extends AppCompatActivity
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
-                                        Toast.makeText(PetzDailyCriacaoEventoNav.this, "Sua conta foi criada com sucesso!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(PetzDailyCriacaoEventoNav.this, "Evento criado com sucesso!", Toast.LENGTH_SHORT).show();
                                         loadingBar.dismiss();
                                         Intent intent = new Intent(PetzDailyCriacaoEventoNav.this, PetzDailyEventoNav.class);
                                         startActivity(intent);
@@ -163,27 +163,6 @@ public class PetzDailyCriacaoEventoNav extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.petz_daily_criacao_evento_nav, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

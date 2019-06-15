@@ -49,7 +49,7 @@ public class PetzDailyPerfilPetNav extends AppCompatActivity
     }
 
     private void Irpara() {
-        Intent i = new Intent (PetzDailyPerfilPetNav.this, PetzDailyPrinciPerfilNav.class);
+        Intent i = new Intent (PetzDailyPerfilPetNav.this, CadastroPetzDailyNav.class);
         startActivity(i);
     }
 

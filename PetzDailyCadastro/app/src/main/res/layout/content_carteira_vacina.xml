@@ -15,13 +15,14 @@
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="62dp"
         android:layout_marginRight="62dp"
         android:text="@string/txtDVacina"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintEnd_toStartOf="@+id/edtDataVacina"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -32,40 +33,37 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="87dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginRight="58dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:text="@string/txtRVacina"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/edtReacaoVacina"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/edtDataVacina"
         android:layout_width="182dp"
         android:layout_height="45dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:ems="10"
-        android:hint="Vacina Contra Raiva"
         android:inputType="textPersonName"
         android:text="@string/edtDVacina"
         android:textColorLink="@color/design_default_color_primary_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeVacina" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="175dp"
+        android:id="@+id/edtNomeVacina"
+        android:layout_width="181dp"
         android:layout_height="45dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:ems="10"
-        android:hint="Contra Raiva"
         android:inputType="textPersonName"
         android:text="@string/edtNvacina"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,22 +81,12 @@
         android:text="@string/txtNVacina"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText4"
+        app:layout_constraintEnd_toStartOf="@+id/edtNomeVacina"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="201dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSalvar"
         android:layout_width="209dp"
         android:layout_height="50dp"
         android:layout_marginStart="126dp"
@@ -117,5 +105,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edtReacaoVacina"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataVacina" />
 
 </android.support.constraint.ConstraintLayout>

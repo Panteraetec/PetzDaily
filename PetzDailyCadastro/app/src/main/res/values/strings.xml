@@ -80,6 +80,7 @@
     <string name="txtLocalEvento">Local</string>
     <string name="txtTipoEvento">Tipo</string>
     <string name="txtDescricaoEvento">Descrição</string>
+    <string name="title_activity_petz_daily_vacina_nav">PetzDailyVacinaNav</string>
 
 </resources>
 	

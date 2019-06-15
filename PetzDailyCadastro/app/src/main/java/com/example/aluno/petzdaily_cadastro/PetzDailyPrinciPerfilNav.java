@@ -45,6 +45,11 @@ public class PetzDailyPrinciPerfilNav extends AppCompatActivity
     }
 
 
+    public void onClickVacina(View v){
+        Intent i = new Intent (PetzDailyPrinciPerfilNav.this, PetzDailyVacinaNav.class);
+        startActivity(i);
+    }
+
 
 
     @SuppressWarnings("StatementWithEmptyBody")
