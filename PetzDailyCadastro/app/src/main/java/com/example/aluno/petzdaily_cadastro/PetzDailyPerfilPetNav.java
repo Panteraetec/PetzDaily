@@ -23,6 +23,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class PetzDailyPerfilPetNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private ImageView imgPet;
     private FloatingActionButton adcPet;
 
     @Override
@@ -43,6 +44,8 @@ public class PetzDailyPerfilPetNav extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        imgPet = (ImageView) findViewById(R.id.imgPet);
+
         adcPet = (FloatingActionButton) findViewById(R.id.floatingActionButton);
 
         adcPet.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +60,14 @@ public class PetzDailyPerfilPetNav extends AppCompatActivity
         CircleImageView fotoUsuario = headerview.findViewById(R.id.fotoUsuario);
 
         nomeUsuario.setText(Prevalent.currentOnlineUser.getNome());
+
+        imgPet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(PetzDailyPerfilPetNav.this, PetzDailyPrinciPerfilNav.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void Irpara() {
@@ -100,6 +111,11 @@ public class PetzDailyPerfilPetNav extends AppCompatActivity
             Intent it = new Intent(this, PetzDailyLogin.class);
             startActivity(it);
         }
+        if (id == R.id.nav_manage){
+            Intent it = new Intent (this, PetzDailyConfig.class);
+            startActivity(it);
+        }
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

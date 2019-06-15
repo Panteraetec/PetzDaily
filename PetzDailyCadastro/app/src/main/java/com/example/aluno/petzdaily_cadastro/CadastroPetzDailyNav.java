@@ -287,6 +287,11 @@ public class CadastroPetzDailyNav extends AppCompatActivity
             startActivity(it);
         }
 
+        if (id == R.id.nav_manage){
+            Intent it = new Intent (this, PetzDailyConfig.class);
+            startActivity(it);
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

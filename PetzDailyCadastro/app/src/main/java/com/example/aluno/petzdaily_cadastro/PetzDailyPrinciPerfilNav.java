@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.aluno.petzdaily_cadastro.Prevalent.Prevalent;
@@ -21,6 +22,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PetzDailyPrinciPerfilNav extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Button btnVacina;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,16 @@ public class PetzDailyPrinciPerfilNav extends AppCompatActivity
         CircleImageView fotoUsuario = headerview.findViewById(R.id.fotoUsuario);
 
         nomeUsuario.setText(Prevalent.currentOnlineUser.getNome());
+
+        btnVacina = (Button) findViewById(R.id.btnCarteiraVac);
+
+        btnVacina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (PetzDailyPrinciPerfilNav.this, carteira_vacina.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
@@ -83,6 +96,11 @@ public class PetzDailyPrinciPerfilNav extends AppCompatActivity
 
         if (id == R.id.nav_sair){
             Intent it = new Intent(this, PetzDailyLogin.class);
+            startActivity(it);
+        }
+
+        if (id == R.id.nav_manage){
+            Intent it = new Intent (this, PetzDailyConfig.class);
             startActivity(it);
         }
 

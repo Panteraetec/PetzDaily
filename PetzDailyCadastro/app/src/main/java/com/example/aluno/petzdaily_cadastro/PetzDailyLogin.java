@@ -119,9 +119,9 @@ public class PetzDailyLogin extends AppCompatActivity {
                         {
                             if(parentDbName.equals("Users")) {
                                 Toast.makeText(PetzDailyLogin.this, "Logado com sucesso", Toast.LENGTH_SHORT).show();
-                                loadingBar.dismiss();
                                 Prevalent.currentOnlineUser = usersData;
-                                Intent intent = new Intent(PetzDailyLogin.this, PetzDailyPerfilPetNav.class);
+                                Intent intent = new Intent(PetzDailyLogin.this, CadastroPetzDailyNav.class);
+                                intent.putExtra("Pet", "Pet");
                                 startActivity(intent);
                             }
                         }
